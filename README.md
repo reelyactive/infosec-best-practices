@@ -3,6 +3,9 @@ InfoSec Best Practices
 
 Best practices for information security using reelyActive open source software.
 
+- web version: [reelyactive.github.io/infosec-best-practices](https://reelyactive.github.io/infosec-best-practices)
+- markdown version: [github.com/reelyactive/infosec-best-practices](https://github.com/reelyactive/infosec-best-practices)
+
 
 License
 -------
