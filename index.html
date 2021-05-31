@@ -1,78 +1,107 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description"
-          content="Best practices for information security using reelyActive open source software.">
-    <link rel="stylesheet" href="style/bootstrappyactive.min.css">
-    <title> InfoSec Best Practices </title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Best practices for information security using reelyActive open source software."
+    />
+    <link rel="stylesheet" href="style/bootstrappyactive.min.css" />
+    <title>InfoSec Best Practices</title>
     <!----- Structured, linked metadata (JSON-LD & Schema.org) ----->
     <script type="application/ld+json">
-    [{
-      "@context": "https://schema.org", 
-      "@type": "TechArticle",
-      "headline": "InfoSec Best Practices",
-      "description": "Best practices for information security using reelyActive open source software.",
-      "proficiencyLevel": "Beginner",
-      "genre": "style guide",
-      "image": "https://reelyactive.github.io/infosec-best-practices/images/header.png",
-      "author": {
-        "@type": "Organization",
-        "url": "https://www.reelyactive.com"
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "reelyActive Developers",
-        "item": "https://reelyactive.github.io"
-      },{
-        "@type": "ListItem",
-        "position": 2,
-        "name": "InfoSec Best Practices",
-      }]
-    }]
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "TechArticle",
+          "headline": "InfoSec Best Practices",
+          "description": "Best practices for information security using reelyActive open source software.",
+          "proficiencyLevel": "Beginner",
+          "genre": "style guide",
+          "image": "https://reelyactive.github.io/infosec-best-practices/images/header.png",
+          "author": {
+            "@type": "Organization",
+            "url": "https://www.reelyactive.com"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "reelyActive Developers",
+              "item": "https://reelyactive.github.io"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "InfoSec Best Practices"
+            }
+          ]
+        }
+      ]
     </script>
   </head>
+
   <body>
     <!-- Navigation -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white
-                shadow">
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light bg-white shadow"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="/">
-          <img src="images/reelyactive-developers-logo-nav.png" width="135"
-               height="30" alt="reelyActive Developers">
+          <img
+            src="images/reelyactive-developers-logo-nav.png"
+            width="135"
+            height="30"
+            alt="reelyActive Developers"
+          />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarItems" aria-controls="navbarItems"
-                aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarItems"
+          aria-controls="navbarItems"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarItems">
           <!-- Left-aligned navigation items -->
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
           <!-- Right-aligned navigation items -->
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarInfoDropdown"
-                 role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                 aria-expanded="false">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarInfoDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 <i class="fas fa-question-circle"></i>
               </a>
               <!-- Info about tracking and open source software/licenses -->
-              <ul class="dropdown-menu dropdown-menu-end shadow"
-                   aria-labelledby="navbarInfoDropdown">
+              <ul
+                class="dropdown-menu dropdown-menu-end shadow"
+                aria-labelledby="navbarInfoDropdown"
+              >
                 <li>
-                  <a class="dropdown-item"
-                     href="https://www.reelyactive.com/how-we-observe/#digital">
-                    <i class="fas fa-mouse-pointer"></i>
-                    Behaviour tracking free &nbsp;
+                  <a
+                    class="dropdown-item"
+                    href="https://www.reelyactive.com/how-we-observe/#digital"
+                  >
+                    <i class="fas fa-mouse-pointer"></i> Behaviour tracking free
+                    &nbsp;
                     <span class="badge bg-success animate-breathing">
                       <i class="fas fa-user-shield"></i>
                     </span>
@@ -80,20 +109,25 @@
                 </li>
                 <li class="dropdown-divider"></li>
                 <li>
-                  <a class="dropdown-item" target="_blank"
-                     href="https://getbootstrap.com" >
-                    <i class="fab fa-bootstrap"></i>
-                    Bootstrap 5 &nbsp;
+                  <a
+                    class="dropdown-item"
+                    target="_blank"
+                    href="https://getbootstrap.com"
+                  >
+                    <i class="fab fa-bootstrap"></i> Bootstrap 5 &nbsp;
                     <span class="badge bg-light text-dark">
                       <i class="fab fa-osi"></i> MIT
                     </span>
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" target="_blank"
-                     href="https://fontawesome.com" >
-                    <i class="fab fa-font-awesome"></i>
-                    Font Awesome (Free) &nbsp;
+                  <a
+                    class="dropdown-item"
+                    target="_blank"
+                    href="https://fontawesome.com"
+                  >
+                    <i class="fab fa-font-awesome"></i> Font Awesome (Free)
+                    &nbsp;
                     <span class="badge bg-light text-dark">
                       <i class="fab fa-creative-commons"></i>
                       <i class="fab fa-osi"></i> MIT
@@ -101,21 +135,26 @@
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" target="_blank"
-                     href="https://github.com/reelyactive/web-style-guide/" >
-                    <i class="fas fa-code"></i>
-                    Web Style Guide &nbsp;
+                  <a
+                    class="dropdown-item"
+                    target="_blank"
+                    href="https://github.com/reelyactive/web-style-guide/"
+                  >
+                    <i class="fas fa-code"></i> Web Style Guide &nbsp;
                     <span class="badge bg-light text-dark">
                       <i class="fab fa-osi"></i> MIT
-                   </span>
+                    </span>
                   </a>
                 </li>
                 <li class="dropdown-divider"></li>
                 <li>
-                  <a class="dropdown-item" target="_blank"
-                     href="https://www.reelyactive.com/made-in-montreal/" >
-                    <i class="fab fa-canadian-maple-leaf"></i>
-                    Made in Montr&eacute;al &nbsp;
+                  <a
+                    class="dropdown-item"
+                    target="_blank"
+                    href="https://www.reelyactive.com/made-in-montreal/"
+                  >
+                    <i class="fab fa-canadian-maple-leaf"></i> Made in
+                    Montr&eacute;al &nbsp;
                     <i class="fas fa-city"></i>
                   </a>
                 </li>
@@ -131,11 +170,12 @@
         <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
           <h1 class="mt-4">
             InfoSec Best Practices
-            <small class="text-muted">  for Tutorials </small>
+            <small class="text-muted"> for Tutorials </small>
           </h1>
-          <p class="lead"> Best practices for information security using reelyActive open source software. </p>
-          <img src="/images/header.png" class="img-fluid"
-               alt="InfoSec Best Practices">
+          <p class="lead">
+            Best practices for information security using reelyActive open
+            source software.
+          </p>
           <!----- The TL;DR ----->
           <div class="card my-4">
             <div class="card-body">
@@ -143,111 +183,1298 @@
                 The TL;DR
                 <small class="text-muted"> (Too Long; Didn't Read) </small>
               </h2>
-              <p class="lead"> Summarise the content in a few words using friendly terms. </p>
-              <p> Perhaps another sentence here as a more robust summary. </p>
-              <hr>
+              <p class="lead">
+                This is a top 9 checklist we at reelyActive use to harden our
+                system when we deploy our software.
+              </p>
+              <p>
+                We recommend doing more hardening of your system, but those 9
+                recommendations are a good start.
+              </p>
+              <hr />
               <dl class="row">
                 <dt class="col-sm-3">What's the expected result?</dt>
-                <dd class="col-sm-9">Answer what a reader can expect as a result of reading this.</dd>
+                <dd class="col-sm-9">
+                  The system will have less attack vectors and a better
+                  incidence respond capability.
+                </dd>
                 <dt class="col-sm-3">What's the alternative?</dt>
-                <dd class="col-sm-9">Answer what they might be looking for instead.</dd>
+                <dd class="col-sm-9">
+                  Answer what they might be looking for instead.
+                </dd>
                 <dt class="col-sm-3">Is this for me?</dt>
-                <dd class="col-sm-9">Comment on the target audience, level of detail, etc..</dd>
+                <dd class="col-sm-9">
+                  It is for anyone who do not have knowledge in security or just
+                  a little. It is an overview of the concept with examples. More
+                  detail will be added with time and if asked.
+                </dd>
               </dl>
             </div>
           </div>
+
           <!----- Step 1 of X ----->
           <div class="card my-4 bg-light border-0">
             <div class="card-body pt-4">
               <h2 id="step01" class="card-title my-2">
-                Title of a step in a tutorial &nbsp;
-                <a href="#step01" class="badge bg-primary">Step 1 of X</a>
+                Passwords &nbsp;
+                <a href="#step01" class="badge bg-primary">check 1 of 9</a>
               </h2>
-              <p class="lead"> Summarise the step in a few words using friendly terms. </p>
-              <hr>
+              <p class="lead">
+                In this section, we are going to talk about passwords. Things to
+                think of when installing a new operating system or application.
+              </p>
+              <hr />
               <dl class="row">
-                <dt class="col-sm-3">Why use a bg-light card?</dt>
-                <dd class="col-sm-9">Because it provides a clear break in the content and makes the title stand out.</dd>
-                <dt class="col-sm-3">Why use badges for step numbers?</dt>
-                <dd class="col-sm-9">Because badges stand out nicely.  Moreover, the badge serves as a local hyperlink (#) for visitors to easily link that step.</dd>
+                <dt class="col-sm-3">Why are password important?</dt>
+                <dd class="col-sm-9">
+                  Because password is the main protector of our private
+                  information in life. Every account and system has a password,
+                  so knowing how to create great password and how to deal with
+                  them is important.
+                </dd>
               </dl>
-              <img src="../images/tutorial-step-image.png"
-                   class="card-img-bottom" alt="960px wide and not too high">
             </div>
           </div>
           <h3 class="mt-4">
-            First sub-step title
+            Information
             <small class="text-muted"> Part 1 </small>
           </h3>
-          <p> <span class="badge bg-warning"><i class="fas fa-exclamation-triangle"></i></span> This is an example of a warning to the user. </p>
-          <p> Content goes here. </p>
-          <ol>
-            <li> An ordered list </li>
-            <li> Combine explanations and <code>code</code> </li>
-          </ol>
+          <p>
+            Every year many security breaches are made because of bad password
+            or poor passwords management. This is possible because people have
+            the bad habit to reuse password, to write them down on paper or on a
+            text document or using poor password policy. The help the following
+            parts will guide you to create and manage password.
+          </p>
           <h3>
-            Second sub-step title
+            Change all the default password!!
             <small class="text-muted"> Part 2 </small>
           </h3>
-          <p> <span class="badge bg-success"><i class="fas fa-exclamation-circle"></i></span> This is an example of some <i>did-you-know</i> info for the user. </p>
-          <p> Content goes here. </p>
-          <pre><code>// This is &lt;code&gt; in a &lt;pre&gt; block
-if(isMultipleLines) {
-  console.log('This can be handy as it respects code indentation nicely!');
-}
-          </code></pre>
-          <h3>
-            Third sub-step title
+          <p>
+            <span class="badge bg-success"
+              ><i class="fas fa-exclamation-circle"></i
+            ></span>
+            Did you know that a lot of home router or selfhosted service still
+            have default passwords? Even in enterprise network employee forgets
+            to change passwords.
+          </p>
+          <p>
+            If there is one thing to retain from this checklist it
+            <b>Change the default password</b>. People tend to forget, and this
+            is bad because it means that anyone with 5 minutes of research on a
+            research engine (DuckDuckGo, Google, Ecosia) can log in your system
+            or application.
+          </p>
+          <h3 class="mt-4">
+            Password policy
             <small class="text-muted"> Part 3 </small>
           </h3>
-          <p> Consider nav-tabs for steps where the user can choose between various options, or should repeat similar steps. </p>
+          <p>
+            <span class="badge bg-warning"
+              ><i class="fas fa-exclamation-triangle"></i
+            ></span>
+            The first tab is what I recommend. The second tab is the minimum
+            require.
+          </p>
+          <p>
+            What is password policy? It is an arbitrary set of rules to create a
+            password. They are put in place to make your password harder to
+            guest or brute force.
+          </p>
           <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="firsttab"
-                      data-bs-toggle="tab" data-bs-target="#firstcontent"
-                      type="button" role="tab" aria-controls="firsttab"
-                      aria-selected="true"> First </button>
+              <button
+                class="nav-link active"
+                id="firsttab"
+                data-bs-toggle="tab"
+                data-bs-target="#firstcontent-1-3"
+                type="button"
+                role="tab"
+                aria-controls="firsttab"
+                aria-selected="true"
+              >
+                Recommend
+              </button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="secondtab" data-bs-toggle="tab"
-                      data-bs-target="#secondcontent" type="button" role="tab"
-                      aria-controls="secondtab"
-                      aria-selected="false"> Second </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="thirdtab" data-bs-toggle="tab"
-                      data-bs-target="#thirdcontent" type="button" role="tab"
-                      aria-controls="thirdtab"
-                      aria-selected="false"> Third </button>
+              <button
+                class="nav-link"
+                id="secondtab"
+                data-bs-toggle="tab"
+                data-bs-target="#secondcontent-1-3"
+                type="button"
+                role="tab"
+                aria-controls="secondtab"
+                aria-selected="false"
+              >
+                Minimum
+              </button>
             </li>
           </ul>
           <div class="tab-content tab-content-border">
-            <div class="tab-pane fade show active" id="firstcontent"
-                 role="tabpanel" aria-labelledby="firsttab">
-              <p> Content of the first tab. </p>
+            <div
+              class="tab-pane fade show active"
+              id="firstcontent-1-3"
+              role="tabpanel"
+              aria-labelledby="firsttab"
+            >
+              <ul>
+                <li>Must be at least 15 characters or more.</li>
+                <li>Must contain at least 3 uppercase characters or more.</li>
+                <li>Must contain at least 3 numbers or more.</li>
+                <li>Must contain at least 3 symbols or more.</li>
+                <li>Should not use dictionary words in it.</li>
+                <li>Should be change every 30 days.</li>
+              </ul>
+              <p>An example of what could look the password:</p>
+              <code
+                ><h5><pre> #N1xAV1!kjb^1@vG7d1$</pre></h5></code
+              >
+              <p>
+                To crack a password like this would take a few quintillion. The
+                time is relative to the common technology, but supercomputer
+                exist, and quantum computer are getting faster.
+              </p>
             </div>
-            <div class="tab-pane fade" id="secondcontent" role="tabpanel"
-                 aria-labelledby="secondtab">
-              <p> Content of the second tab. </p>
-            </div>
-            <div class="tab-pane fade" id="thirdcontent" role="tabpanel"
-                 aria-labelledby="thirdtab">
-              <p> Content of the third tab. </p>
+            <div
+              class="tab-pane fade"
+              id="secondcontent-1-3"
+              role="tabpanel"
+              aria-labelledby="secondtab"
+            >
+              <ul>
+                <li>Must be at least 8 characters or more.</li>
+                <li>Must contain at least 1 uppercase characters or more.</li>
+                <li>Must contain at least 1 numbers or more.</li>
+                <li>Must contain at least 1 symbols or more.</li>
+                <li>Should not use dictionary words in it.</li>
+                <li>Should be change every 90 days.</li>
+              </ul>
+              <p>An example of what could look the password:</p>
+              <code
+                ><h5><pre> gUaf&3gp</pre></h5></code
+              >
+              <p>
+                To crack a password like this would take a few hundred years.
+                The time is relative to the common technology, but supercomputer
+                exist, and quantum computer are getting faster.
+              </p>
             </div>
           </div>
+          <p>
+            The more complex your password is the best it is. Changing password
+            every 30 or 90 days take time and not a lot of people are doing it,
+            but it is a good practice on important account.
+          </p>
+          <h3>
+            Password Manager
+            <small class="text-muted"> Part 4 </small>
+          </h3>
+          <p>
+            I recommend using a password manager to store your passwords. I
+            personally prefer open-source solution and selfhosted, but I know
+            that not everyone have the knowledge or resources for it. So here is
+            my top 3 of open-source and top 3 of proprietary software. (Not in
+            order)
+          </p>
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="firsttab"
+                data-bs-toggle="tab"
+                data-bs-target="#firstcontent-1-4"
+                type="button"
+                role="tab"
+                aria-controls="firsttab"
+                aria-selected="true"
+              >
+                Open-source software
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="secondtab"
+                data-bs-toggle="tab"
+                data-bs-target="#secondcontent-1-4"
+                type="button"
+                role="tab"
+                aria-controls="secondtab"
+                aria-selected="false"
+              >
+                Proprietary software
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content tab-content-border">
+            <div
+              class="tab-pane fade show active"
+              id="firstcontent-1-4"
+              role="tabpanel"
+              aria-labelledby="firsttab"
+            >
+              <ol>
+                <li><a href="https://bitwarden.com/">Bitwarden</a></li>
+                <li><a href="https://keepassxc.org/">KeyPassXC</a></li>
+                <li><a href="https://psono.com/">Psono</a></li>
+              </ol>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="secondcontent-1-4"
+              role="tabpanel"
+              aria-labelledby="secondtab"
+            >
+              <ol>
+                <li><a href="https://www.lastpass.com/">LastPass</a></li>
+                <li><a href=" https://1password.com/">1Password</a></li>
+                <li><a href="https://www.dashlane.com/">DashLane</a></li>
+              </ol>
+            </div>
+          </div>
+
+          <!----- Step 2 of X ----->
+          <div class="card my-4 bg-light border-0">
+            <div class="card-body pt-4">
+              <h2 id="step01" class="card-title my-2">
+                Update and Upgrade &nbsp;
+                <a href="#step01" class="badge bg-primary">check 2 of 9</a>
+              </h2>
+              <p class="lead">
+                In this section, we are going to talk about updates and
+                upgrades.
+              </p>
+              <hr />
+              <dl class="row">
+                <dt class="col-sm-3">Why are update and upgrade important?</dt>
+                <dd class="col-sm-9">
+                  Doing the update and upgrade is important because it will
+                  allow you to have the latest version and patch of the
+                  operating system and their package.
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <h3 class="mt-4">
+            Information
+            <small class="text-muted"> Part 1 </small>
+          </h3>
+          <p>
+            Because of the lack of update and upgrade in many networks,
+            attackers can get in. This is because older version does not have
+            the latest security patch or bug fixes which means hackers can use
+            many known vulnerabilities. If you update and upgrade everything
+            regularly you considerably reduce the attack vector because they
+            need to find new vulnerabilities.
+          </p>
+          <h3 class="mt-4">
+            How to update and upgrade.
+            <small class="text-muted"> Part 2 </small>
+          </h3>
+          <p>
+            <span class="badge bg-warning"
+              ><i class="fas fa-exclamation-triangle"></i
+            ></span>
+            If we are missing an operating system, let us know.
+          </p>
+          <p>
+            Here are commands to update and upgrade your Linux operation system.
+            You should check to new update and upgrade very regularly like
+            everyday or week.
+          </p>
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="firsttab"
+                data-bs-toggle="tab"
+                data-bs-target="#firstcontent-2-2"
+                type="button"
+                role="tab"
+                aria-controls="firsttab"
+                aria-selected="true"
+              >
+                Debian base
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="secondtab"
+                data-bs-toggle="tab"
+                data-bs-target="#secondcontent-2-2"
+                type="button"
+                role="tab"
+                aria-controls="secondtab"
+                aria-selected="false"
+              >
+                Alpine base
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="thirdtab"
+                data-bs-toggle="tab"
+                data-bs-target="#thirdcontent-2-2"
+                type="button"
+                role="tab"
+                aria-controls="thirdtab"
+                aria-selected="false"
+              >
+                Arch base
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="fourthtab"
+                data-bs-toggle="tab"
+                data-bs-target="#fourthcontent-2-2"
+                type="button"
+                role="tab"
+                aria-controls="fourthtab"
+                aria-selected="false"
+              >
+                FreeBSD
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="fifthtab"
+                data-bs-toggle="tab"
+                data-bs-target="#fifthcontent-2-2"
+                type="button"
+                role="tab"
+                aria-controls="fifthtab"
+                aria-selected="false"
+              >
+                Centos, RHEL and Fedora
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content tab-content-border">
+            <div
+              class="tab-pane fade show active"
+              id="firstcontent-2-2"
+              role="tabpanel"
+              aria-labelledby="firsttab"
+            >
+              <code>
+                <h5>
+                  <pre> sudo apt update</pre>
+                  <pre> sudo apt upgrade</pre>
+                </h5>
+              </code>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="secondcontent-2-2"
+              role="tabpanel"
+              aria-labelledby="secondtab"
+            >
+              <code>
+                <h5>
+                  <pre> sudo apk update</pre>
+                  <pre> sudo apk upgrade</pre>
+                </h5>
+              </code>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="thirdcontent-2-2"
+              role="tabpanel"
+              aria-labelledby="secondtab"
+            >
+              <code>
+                <h5>
+                  <pre> sudo pacman -Syy</pre>
+                  <pre> sudo pacman -Su</pre>
+                </h5>
+              </code>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="fourthcontent-2-2"
+              role="tabpanel"
+              aria-labelledby="secondtab"
+            >
+              <code>
+                <h5>
+                  <pre> sudo pkg update</pre>
+                  <pre> sudo pkg upgrade</pre>
+                </h5>
+              </code>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="fifthcontent-2-2"
+              role="tabpanel"
+              aria-labelledby="secondtab"
+            >
+              <p>
+                Centos and RHEL base until version 7 and Fedora until version
+                21:
+              </p>
+              <code>
+                <h5>
+                  <pre> sudo yum update</pre>
+                  <pre> sudo yum upgrade</pre>
+                </h5>
+              </code>
+              <p>
+                Centos and RHEL base version 8 and up and Fedora version 22 and
+                up:
+              </p>
+              <code>
+                <h5>
+                  <pre> sudo dnf check-update</pre>
+                  <pre> sudo dnf upgrade</pre>
+                </h5>
+              </code>
+            </div>
+          </div>
+          <p>
+            You could automate those actions. Some package manager has their own
+            automation, or you can use cron job.
+          </p>
+          <h3>
+            Update and Upgrade in a production environment
+            <small class="text-muted"> Part 3 </small>
+          </h3>
+          <p>
+            Unfortunately, you cannot blindly update and upgrade in a production
+            environment. You must be careful because sometimes it can break your
+            application or operating system. To prevent this, you should test in
+            your test or dev environment to make sure everything run, and you
+            can read the note of the update and upgrade to see what the change
+            are.
+          </p>
+
+          <!----- Step 3 of X ----->
+          <div class="card my-4 bg-light border-0">
+            <div class="card-body pt-4">
+              <h2 id="step01" class="card-title my-2">
+                Firewall &nbsp;
+                <a href="#step01" class="badge bg-primary">check 3 of 9</a>
+              </h2>
+              <p class="lead">
+                In this section, we are going to talk about firewall.
+              </p>
+
+              <hr />
+              <dl class="row">
+                <dt class="col-sm-3">Why are firewall important?</dt>
+                <dd class="col-sm-9">
+                  Firewalls are important because they help reducing the attack
+                  vector from all ports (65535) to only the public ports we
+                  chose to expose.
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <h3 class="mt-4">
+            Information
+            <small class="text-muted"> Part 1 </small>
+          </h3>
+          <p>
+            A firewall is a network device use to analyse network traffic. It
+            will not look in the packets data but only the source and
+            destination IP address and port. Depending on the rules put in
+            place, it will let the packet pass through or not. This is useful to
+            prevent people to connect to other ports than suppose or to only let
+            some IP address connect to the device.
+          </p>
+          <h3 class="mt-4">
+            Use of firewall
+            <small class="text-muted"> Part 2 </small>
+          </h3>
+          <p>
+            <span class="badge bg-warning"
+              ><i class="fas fa-exclamation-triangle"></i
+            ></span>
+            This is an example of firewall that can be use. (Do not exist for
+            FreeBSD.)
+          </p>
+          <p>
+            To demonstrate some rules for a firewall, we are going to use a
+            simple Firewall. Uncomplicated Firewall (UFW) is a basic but
+            well-known Firewall. We will show how to install and put in place
+            simple rules that can be use on a device with Pareto-anywhere.
+          </p>
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="firsttab"
+                data-bs-toggle="tab"
+                data-bs-target="#firstcontent-3-2"
+                type="button"
+                role="tab"
+                aria-controls="firsttab"
+                aria-selected="true"
+              >
+                Debian base
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="secondtab"
+                data-bs-toggle="tab"
+                data-bs-target="#secondcontent-3-2"
+                type="button"
+                role="tab"
+                aria-controls="secondtab"
+                aria-selected="false"
+              >
+                Alpine base
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="thirdtab"
+                data-bs-toggle="tab"
+                data-bs-target="#thirdcontent-3-2"
+                type="button"
+                role="tab"
+                aria-controls="thirdtab"
+                aria-selected="false"
+              >
+                Arch base
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="fourthtab"
+                data-bs-toggle="tab"
+                data-bs-target="#fourthcontent-3-2"
+                type="button"
+                role="tab"
+                aria-controls="fourthtab"
+                aria-selected="false"
+              >
+                Centos, RHEL and Fedora
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content tab-content-border">
+            <div
+              class="tab-pane fade show active"
+              id="firstcontent-3-2"
+              role="tabpanel"
+              aria-labelledby="firsttab"
+            >
+              <code>
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Installing
+                </p>
+                sudo apt install ufw
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Enable logging for ufw
+                </p>
+                sudo ufw logging on
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Allow default ssh port with TCP protocol
+                </p>
+                sudo ufw allow ssh/tcp
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Allow port 3001, 50000 and 50001 on UDP protocol
+                </p>
+                sudo ufw allow 3001
+                <br />
+                sudo ufw allow 50000/udp
+                <br />
+                sudo ufw allow 50001/udp
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Start UFW
+                </p>
+                sudo ufw enable
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## View Status
+                </p>
+                sudo ufw status
+              </code>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="secondcontent-3-2"
+              role="tabpanel"
+              aria-labelledby="secondtab"
+            >
+              <code>
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Installing
+                </p>
+                sudo apk add ufw
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Enable logging for ufw
+                </p>
+                sudo ufw logging on
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Allow default ssh port with TCP protocol
+                </p>
+                sudo ufw allow ssh/tcp
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Allow port 3001, 50000 and 50001 on UDP protocol
+                </p>
+                sudo ufw allow 3001
+                <br />
+                sudo ufw allow 50000/udp
+                <br />
+                sudo ufw allow 50001/udp
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Start UFW
+                </p>
+                sudo ufw enable
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## View Status
+                </p>
+                sudo ufw status
+              </code>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="thirdcontent-3-2"
+              role="tabpanel"
+              aria-labelledby="secondtab"
+            >
+              <code>
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Installing
+                </p>
+                sudo pacman -S ufw
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Enable logging for ufw
+                </p>
+                sudo ufw logging on
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Allow default ssh port with TCP protocol
+                </p>
+                sudo ufw allow ssh/tcp
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Allow port 3001, 50000 and 50001 on UDP protocol
+                </p>
+                sudo ufw allow 3001
+                <br />
+                sudo ufw allow 50000/udp
+                <br />
+                sudo ufw allow 50001/udp
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Start UFW
+                </p>
+                sudo ufw enable
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## View Status
+                </p>
+                sudo ufw status
+              </code>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="fourthcontent-3-2"
+              role="tabpanel"
+              aria-labelledby="secondtab"
+            >
+              <p>
+                Centos and RHEL base until version 7 and Fedora until version
+                21:
+              </p>
+              <code>
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Installing
+                </p>
+                sudo yum -y install ufw
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Enable logging for ufw
+                </p>
+                sudo ufw logging on
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Allow default ssh port with TCP protocol
+                </p>
+                sudo ufw allow ssh/tcp
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Allow port 3001, 50000 and 50001 on UDP protocol
+                </p>
+                sudo ufw allow 3001
+                <br />
+                sudo ufw allow 50000/udp
+                <br />
+                sudo ufw allow 50001/udp
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Start UFW
+                </p>
+                sudo ufw enable
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## View Status
+                </p>
+                sudo ufw status
+              </code>
+              <br />
+              <br />
+              <p>
+                Centos and RHEL base version 8 and up and Fedora version 22 and
+                up:
+              </p>
+              <code>
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Installing
+                </p>
+                sudo dnf install epel-release -y && sudo dnf install ufw -y
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Enable logging for ufw
+                </p>
+                sudo ufw logging on
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Allow default ssh port with TCP protocol
+                </p>
+                sudo ufw allow ssh/tcp
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Allow port 3001, 50000 and 50001 on UDP protocol
+                </p>
+                sudo ufw allow 3001
+                <br />
+                sudo ufw allow 50000/udp
+                <br />
+                sudo ufw allow 50001/udp
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## Start UFW
+                </p>
+                sudo ufw enable
+                <p style="color: gray; margin: auto; font-size: medium">
+                  ## View Status
+                </p>
+                sudo ufw status
+              </code>
+            </div>
+          </div>
+          <p>
+            You should only open ports what you want people to be able to
+            connect to0. The ports 50000 and 50001 must be open to run
+            Pareto-Anywhere because it collects data from there but the port
+            3001 can be close if you do not want the panel open to the public.
+          </p>
+
+          <!----- Step 9 of X ----->
+          <div class="card my-4 bg-light border-0">
+            <div class="card-body pt-4">
+              <h2 id="step01" class="card-title my-2">
+                Backups &nbsp;
+                <a href="#step01" class="badge bg-primary">Check 4 of 9</a>
+              </h2>
+              <p class="lead">
+                In this section, we are going to talk about backups.
+              </p>
+              <hr />
+              <dl class="row">
+                <dt class="col-sm-3">Why are backups important?</dt>
+                <dd class="col-sm-9">
+                  They are a copy of your information in case of lost or attack.
+                  It will help you get back to work without losing everything.
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <h3 class="mt-4">
+            Information
+            <small class="text-muted"> Part 1 </small>
+          </h3>
+          <p>
+            Backups are important not to protect your device before or during an
+            attack but after. When an attacker can get in your systems he can
+            erase or modify or encrypt your data. PenTest magazine said that in
+            2020 around 50% of the company add a ransomware attack in 2020 and
+            the average ransom is 178 000$. Having backups taking regularly can
+            save you from this. It is even useful if your device break or you
+            lose all your data because of a wrong command.
+          </p>
+          <ul>
+            <li>Backups should be done at least once a day when possible.</li>
+            <li>Should have multiple copy of the backup on different site.</li>
+            <li>
+              Keep a backup not connected to any network so it is isolated.
+            </li>
+          </ul>
+
+          <!----- Step 5 of X ----->
+          <div class="card my-4 bg-light border-0">
+            <div class="card-body pt-4">
+              <h2 id="step01" class="card-title my-2">
+                Secure Shell Protocol &nbsp;
+                <a href="#step01" class="badge bg-primary">check 5 of 9</a>
+              </h2>
+              <p class="lead">
+                In this section, we are going to talk about Secure Shell
+                Protocol (ssh). Things to do of when installing a new operating
+                system with ssh.
+              </p>
+              <hr />
+              <dl class="row">
+                <dt class="col-sm-3">Why do we need ssh?</dt>
+                <dd class="col-sm-9">
+                  We use ssh to connect to a remote host. SSH is probably the
+                  most used services to configure and manage device through the
+                  network. It creates an encrypted connection between two
+                  systems and give us the possibility to execute commands
+                  remotely.
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <h3 class="mt-4">
+            Information
+            <small class="text-muted"> Part 1 </small>
+          </h3>
+          <p>
+            Being a really used services a lot of attacker will try to connect
+            on port 22 (default port of ssh) to get access to the host. To
+            prevent and make their life hard we can change the default
+            configuration to protect our service.
+          </p>
+          <h3>
+            Change some of the default configuration
+            <small class="text-muted"> Part 2 </small>
+          </h3>
+          <p>
+            <span class="badge bg-warning"
+              ><i class="fas fa-exclamation-triangle"></i
+            ></span>
+            To modification that we recommend are the minimum recommended. There
+            is a lot more configuration possible. To see other option, look
+            <a
+              href="https://www.ssh.com/academy/ssh/sshd_config"
+              target="_blank"
+              >here</a
+            >.
+          </p>
+          <code>
+            <p style="color: gray; margin: auto; font-size: medium">
+              ## Open /etc/ssh/sshd_config ## with your favorite text editor
+              (nano, vim, ...)
+              <br />
+              <br />
+              ## Make sure the Protocole 2 is enable and not Protocole 1
+              <br />
+              ## Add the following ligne to the top of the if not found
+            </p>
+            Protocol 2
+            <p style="color: gray; margin: auto; font-size: medium">
+              ## Change Default Port
+              <br />
+              ##Replace the default "#Port 22" with any above 1024:
+            </p>
+            Port 2445
+            <p style="color: gray; margin: auto; font-size: medium">
+              ## Don't allow Empty password connection
+              <br />
+              ## Uncomment the following linge and put <b>no</b> if there is
+              something else
+            </p>
+            PermitEmptyPasssword no
+            <p style="color: gray; margin: auto; font-size: medium">
+              ## Don't allow connecting with Password
+              <br />
+              ## Uncomment the following linge and put <b>no</b> if there is
+              something else
+            </p>
+            PasswordAuthentification no
+            <p style="color: gray; margin: auto; font-size: medium">
+              ## Don't allow X11 forwarding
+              <br />
+              ## Uncomment the following linge and put <b>no</b> if there is
+              something else
+            </p>
+            X11Forwarding no
+            <p style="color: gray; margin: auto; font-size: medium">
+              ## Don't allow root to ssh
+              <br />
+              ## Uncomment the following linge and put <b>no</b> if there is
+              something else
+            </p>
+            PermitRootLogin no
+            <p style="color: gray; margin: auto; font-size: medium">
+              ## Allow specific user to use ssh
+              <br />
+              ## Replace <b>&lt;USERNAME&gt;</b> with the real username.
+            </p>
+            AllowUsers &lt;USERNAME&gt; &lt;USERNAME&gt;
+            <p style="color: gray; margin: auto; font-size: medium">
+              ## Deny specific user to use ssh
+              <br />
+              ## Replace <b>&lt;USERNAME&gt;</b> with the real username.
+            </p>
+            DenyUsers &lt;USERNAME&gt; &lt;USERNAME&gt;
+            <p style="color: gray; margin: auto; font-size: medium">
+              ## Change log level (more verbose than default)
+              <br />
+              ## Uncomment the following linge and put <b>VERBOSE</b> if there
+              is something else
+            </p>
+            LogLevel VERBOSE
+          </code>
+          <br />
+          <br />
+          <p>
+            <span class="badge bg-warning"
+              ><i class="fas fa-exclamation-triangle"></i
+            ></span>
+            We disable the option to connect with ssh with our password. To be
+            able to connect remotely we need to create a pair of keys. To do it
+            go look at
+            <a
+              href="https://www.ssh.com/academy/ssh/sshd_config"
+              target="_blank"
+              >this</a
+            >
+            tutorial.
+          </p>
+
+          <!----- Step 4 of X ----->
+          <div class="card my-4 bg-light border-0">
+            <div class="card-body pt-4">
+              <h2 id="step01" class="card-title my-2">
+                Logging &nbsp;
+                <a href="#step01" class="badge bg-primary">check 6 of 9</a>
+              </h2>
+              <p class="lead">
+                In this section, we are going to talk about logs.
+              </p>
+              <hr />
+              <dl class="row">
+                <dt class="col-sm-3">Why are logs important?</dt>
+                <dd class="col-sm-9">
+                  Loggins your system and services are important because it help
+                  knowing what is going on. With logs, you can see who is trying
+                  to connect to your device or see why did something crash.
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <h3 class="mt-4">
+            Information
+            <small class="text-muted"> Part 1 </small>
+          </h3>
+          <p>
+            In most Linux distribution three services are used to log the kernel
+            and user space. They are Syslog, Rsyslog and Journald. You can
+            research how they work and how to set them up to get more
+            information. Those information are useful to know what have done the
+            attacker or why something is not work (ex: if it has crash). You can
+            event you it to prevent some types of attack if you use a monitoring
+            application (Logcheck, Logwatch, Logstash).
+          </p>
+          <p>
+            <span class="badge bg-success"
+              ><i class="fas fa-exclamation-circle"></i
+            ></span>
+            Logs can be founds in <code>/var/log folder</code> of the operating
+            system.
+          </p>
+          <p>
+            <span class="badge bg-warning"
+              ><i class="fas fa-exclamation-triangle"></i
+            ></span>
+            Do not forget to enable logging in application that do not do it
+            automatically.
+          </p>
+
+          <!----- Step 6 of X ----->
+          <div class="card my-4 bg-light border-0">
+            <div class="card-body pt-4">
+              <h2 id="step01" class="card-title my-2">
+                Users and Groups &nbsp;
+                <a href="#step01" class="badge bg-primary">check 7 of 9</a>
+              </h2>
+              <p>
+                <span class="badge bg-warning"
+                  ><i class="fas fa-exclamation-triangle"></i
+                ></span>
+                This part is more advance and require a more deeply
+                understanding of linux and the operating system.
+              </p>
+              <p class="lead">
+                In this section, we are going to talk about the possibility in
+                managing users and groups of users. What should a use be able to
+                access and what privilege should they have.
+              </p>
+              <hr />
+              <dl class="row">
+                <dt class="col-sm-3">
+                  Why is user and groups permission important?
+                </dt>
+                <dd class="col-sm-9">
+                  Controlling who can access what in a network or on a system is
+                  incredibly important because a person who has access to
+                  services, they do not need is a security risk and they could
+                  break things. Imagine a salesman having access to a production
+                  environment and enter a wrong command by accident.
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <h3 class="mt-4">
+            Information
+            <small class="text-muted"> Part 1 </small>
+          </h3>
+          <p>
+            In a GNU / Linux system, there is three type of users: the root, the
+            sudoers and normal users. The root user is the default all access
+            user. The root user is the admin of the system and have “all the
+            power”. The sudoers are users that in the sudo groups which give
+            them the same privilege than the root. The normal users do not have
+            access to privilege require services and only what they created or
+            shared with them. The groups are like a tag added to users to set a
+            set of rules to multiple people at the same time and give them
+            access to files and folders.
+          </p>
+          <p>
+            We recommend creating a user per person using the system and not a
+            user for multiple people because you can not manage the access
+            efficiently. And with this in mind block multiple connection from
+            the same account on a single host.
+            <br />
+            <br />
+
+            A default guideline would be:
+          </p>
+          <ul>
+            <li>One user per person</li>
+            <li>One connection per user</li>
+            <li>
+              Users should not have all the root privilege with sudo command
+              (except admins)
+            </li>
+            <li>
+              Make multiple small groups instead of one group with a lot of
+              permissions.
+            </li>
+          </ul>
+          <p>
+            Making those changes is more advance but help a lot if an attacker
+            gain access to the system because he will be limited in is action.
+            To help you make these changes,
+            <a href="https://linux.die.net/man/5/limits.conf">here</a> a link to
+            the limits.conf man page (manual) and
+            <a
+              href="https://www.digitalocean.com/community/tutorials/how-to-edit-the-sudoers-file"
+              >here</a
+            >
+            a link to a tutorial on user and groups privilege management from
+            Digital Ocean.
+          </p>
+
+          <!----- Step 7 of X ----->
+          <div class="card my-4 bg-light border-0">
+            <div class="card-body pt-4">
+              <h2 id="step01" class="card-title my-2">
+                Legacy package and services &nbsp;
+                <a href="#step01" class="badge bg-primary">check 8 of 9</a>
+              </h2>
+              <p class="lead">
+                In this section, we are going to talk about why you should
+                remove services and packege not used.
+              </p>
+              <hr />
+              <dl class="row">
+                <dt class="col-sm-3">
+                  Why is removing unsused packege and services important?
+                </dt>
+                <dd class="col-sm-9">
+                  Removing old things from a host is useful to reduce the attack
+                  vector and reduce the change of broken the environment.
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <h3 class="mt-4">
+            Information
+            <small class="text-muted"> Part 1 </small>
+          </h3>
+          <p>
+            You should never have unused package and services on your system
+            because it takes resources, have change to break the system with a
+            new update or can contain vulnerabilities that can help the attacker
+            get in. In many cases, when you install a new operation system it
+            comes with default package like curl, wget, python and others. Those
+            packages might not be useful on your system and having them give
+            tool to an attacker.
+          </p>
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="firsttab"
+                data-bs-toggle="tab"
+                data-bs-target="#firstcontent-6-2"
+                type="button"
+                role="tab"
+                aria-controls="firsttab"
+                aria-selected="true"
+              >
+                Debian base
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="secondtab"
+                data-bs-toggle="tab"
+                data-bs-target="#secondcontent-6-2"
+                type="button"
+                role="tab"
+                aria-controls="secondtab"
+                aria-selected="false"
+              >
+                Alpine base
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="thirdtab"
+                data-bs-toggle="tab"
+                data-bs-target="#thirdcontent-6-2"
+                type="button"
+                role="tab"
+                aria-controls="thirdtab"
+                aria-selected="false"
+              >
+                Arch base
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="fourthtab"
+                data-bs-toggle="tab"
+                data-bs-target="#fourthcontent-6-2"
+                type="button"
+                role="tab"
+                aria-controls="fourthtab"
+                aria-selected="false"
+              >
+                Centos, RHEL and Fedora
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content tab-content-border">
+            <div
+              class="tab-pane fade show active"
+              id="firstcontent-6-2"
+              role="tabpanel"
+              aria-labelledby="firsttab"
+            >
+              <code>sudo apt remove &lt;PACKAGE_NAME&gt;</code>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="secondcontent-6-2"
+              role="tabpanel"
+              aria-labelledby="secondtab"
+            >
+              <code>sudo apk del &lt;PACKAGE_NAME&gt;</code>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="thirdcontent-6-2"
+              role="tabpanel"
+              aria-labelledby="secondtab"
+            >
+              <code>sudo pacman -R &lt;PACKAGE_NAME&gt;</code>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="fourthcontent-6-2"
+              role="tabpanel"
+              aria-labelledby="secondtab"
+            >
+              <p>
+                Centos and RHEL base until version 7 and Fedora until version
+                21:
+              </p>
+              <code>sudo yum remove &lt;PACKAGE_NAME&gt;</code>
+              <p>
+                Centos and RHEL base version 8 and up and Fedora version 22 and
+                up:
+              </p>
+              <code>sudo dnf remove &lt;PACKAGE_NAME&gt;</code>
+            </div>
+          </div>
+
+          <!----- Step 8 of X ----->
+          <div class="card my-4 bg-light border-0">
+            <div class="card-body pt-4">
+              <h2 id="step01" class="card-title my-2">
+                Data Transmition &nbsp;
+                <a href="#step01" class="badge bg-primary">check 9 of 9</a>
+              </h2>
+              <p class="lead">
+                In this section, we are going to talk about why you should
+                always have encrypted communication.
+              </p>
+              <hr />
+              <dl class="row">
+                <dt class="col-sm-3">
+                  Why is encrypted communication important?
+                </dt>
+                <dd class="col-sm-9">
+                  Having none encrypted data is letting everyone know what we
+                  are sharing. This can be harmful because people can know
+                  classify information or even change the information
+                  transmitted.
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <h3 class="mt-4">
+            Information
+            <small class="text-muted"> Part 1 </small>
+          </h3>
+          <p>
+            Sending clear text to over internet today is an invitation for
+            attacker and a big lack of privacy. Transmitting information over
+            internet should use ssl or tls (encryption method (https)) or a vpn.
+            There is many other protocols to encrypt data but they are wildly
+            use. You can use ssl / tls on a web server with the help of a
+            certificate, it can be free and relatively easy to install. In the
+            other end, using a vpn is mainly known today. Setting up a vpn in
+            quite cheap and easy. These will protect your privacy and data from
+            attacker or even anyone. In a corporate network, data does not have
+            to be encrypted because it is a close network but if it is possible,
+            it should be. Remember: Clear information is information that can be
+            modify and leverage.
+          </p>
+          <ul>
+            <li>
+              To get your basic certificate for ssl / tls, we would recommend
+              <a href="https://letsencrypt.org/">Let’s encrypt</a>.
+            </li>
+            <li>
+              To setup a vpn, we would recommend
+              <a href="https://www.wireguard.com/">WireGuard</a> or
+              <a href="https://openvpn.net/">OpenVPN</a>.
+            </li>
+          </ul>
+
           <!----- Where to next ----->
-          <hr class="my-4">
-          <h2> Where to next? </h2>
-          <p class="lead"> Continue exploring our open architecture and all its applications. </p>
+          <hr class="my-4" />
+          <h2>Where to next?</h2>
+          <p class="lead">
+            Continue exploring our open architecture and all its applications.
+          </p>
           <ul class="list-group list-group-horizontal mb-4">
             <li class="list-group-item border-0">
               <a href="https://www.reelyactive.com">
-                <img src="images/icon-reelyactive.png" class="img-fluid">
+                <img src="images/icon-reelyactive.png" class="img-fluid" />
               </a>
             </li>
             <li class="list-group-item border-0">
               <a href="https://www.reelyactive.com">
-                <h5 class="mt-0 mb-1"> reelyActive Home </h5>
+                <h5 class="mt-0 mb-1">reelyActive Home</h5>
               </a>
               "Owl" things reelyActive.
             </li>
@@ -256,7 +1483,9 @@ if(isMultipleLines) {
       </div>
     </div>
     <footer class="footer bg-dark bg-gradient">
-      <a href="https://github.com/reelyactive/infosec-best-practices"> infosec-best-practices </a>
+      <a href="https://github.com/reelyactive/infosec-best-practices">
+        infosec-best-practices
+      </a>
       &nbsp; | &nbsp;
       <a href="https://www.reelyactive.com"> &copy; reelyActive 2021 </a>
     </footer>
